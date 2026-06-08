@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Matthew Embree — ">
+  <meta property="og:title" content="Matthew Embree — Game Developer">
+  <meta property="og:description" content="Indie game developer building original, satisfying game experiences.">
+  <meta property="og:type" content="website">
+  <title>Matthew Embree — Game Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=VT323&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="retro-site">
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" aria-label="Home">ME.</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#games" class="nav__link">Games</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__motion" aria-hidden="true">
+        <span class="hero__orb hero__orb--one"></span>
+        <span class="hero__orb hero__orb--two"></span>
+        <span class="hero__orb hero__orb--three"></span>
+        <span class="hero__ring"></span>
+      </div>
+      <div class="container hero__inner">
+        <span class="hero__eyebrow">Indie Game Developer</span>
+        <h1 class="hero__title">
+          <span class="hero__title-line" style="--delay: 0.1s">Matthew</span>
+          <span class="hero__title-line hero__title-line--accent" style="--delay: 0.25s">Embree</span>
+        </h1>
+        <p class="hero__sub" style="--delay: 0.4s">
+          Building original, statisfying, and memorable games that players love. With a focus on roguelikes, procedural systems, and emergent gameplay.
+        </p>
+        <div class="hero__actions" style="--delay: 0.55s">
+          <a href="#games" class="btn btn--primary">See My Work</a>
+          <a href="#contact" class="btn btn--outline-dark">Get In Touch</a>
+        </div>
+      </div>
+      <a href="#games" class="hero__scroll" aria-label="Scroll to games">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <div class="retro-runner retro-runner--divider" aria-hidden="true">
+      <div class="retro-runner__hud">PLAYER 1 • RUN LOOP ACTIVE</div>
+      <div class="retro-runner__lane"></div>
+      <div class="retro-runner__sprite"></div>
+      <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-one"></div>
+      <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-two"></div>
+    </div>
+
+    <!-- ===== FEATURED GAMES ===== -->
+    <section id="games" class="section games">
+      <div class="container">
+        <header class="section__header reveal">
+          <span class="section__label">Featured Work</span>
+          <h2 class="section__title">Games</h2>
+        </header>
+
+        <div class="games__grid">
+
+          <!-- Killing Slime -->
+          <article class="game-card game-card--link reveal" data-index="0" data-case-study="projects/killing-slime.html" tabindex="0" role="link" aria-label="Open Killing Slime case study">
+            <div class="game-card__art game-card__art--slime">
+              <img src="ks.png" alt="Killing Slime gameplay screenshot" class="game-card__img game-card__img--fit" loading="lazy" decoding="async">
+              <div class="game-card__badge">Steam</div>
+            </div>
+            <div class="game-card__body">
+              <h3 class="game-card__title">Killing Slime</h3>
+              <p class="game-card__desc">A roguelike lane tower defense game focused on replayable runs and smart build choices.</p>
+              <ul class="game-card__tags" aria-label="Tags">
+                <li>Action</li>
+                <li>Arcade</li>
+                <li>Unity</li>
+              </ul>
+              <div class="game-card__notes" aria-label="Project notes">
+                <h4 class="game-card__notes-title">Key Highlights</h4>
+                <ul class="game-card__notes-list">
+                  <li>Shipped a commercial build on Steam, evolving the project from its original Chronos Gate prototype.</li>
+                  <li>Designed lane-based encounter pacing and run-to-run variation to improve replayability.</li>
+                </ul>
+                <h4 class="game-card__notes-title">What I Learned</h4>
+                <ul class="game-card__notes-list">
+                  <li>Implemented spreadsheet-driven balancing and content planning to accelerate iteration cycles.</li>
+                  <li>Used Perforce for team version control, improving asset coordination and reducing integration conflicts.</li>
+                </ul>
+              </div>
+              <div class="game-card__links">
+                <!-- TODO: replace # with your actual Steam page URL -->
+                <a href="https://store.steampowered.com/app/4780540/Killing_Slime/" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--filled">Steam</a>
+                <!-- TODO: replace with actual GitHub repo URL -->
+                <a href="https://github.com/mgembree/killing-slime" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--ghost-light">GitHub</a>
+                <a href="projects/killing-slime.html" class="btn btn--sm btn--ghost-light">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Eco-Hunter -->
+          <article class="game-card game-card--link reveal" data-index="1" data-case-study="projects/eco-hunter.html" tabindex="0" role="link" aria-label="Open Eco-Hunter case study">
+            <div class="game-card__art game-card__art--ecohunter">
+              <img src="ecogen.png" alt="Eco-Hunter gameplay screenshot" class="game-card__img" loading="lazy" decoding="async">
+            </div>
+            <div class="game-card__body">
+              <h3 class="game-card__title">Eco-Hunter</h3>
+              <p class="game-card__desc"> A procedural ecosystem where unique creatures evolve your character's abilities </p>
+              <ul class="game-card__tags" aria-label="Tags">
+                <li>Simulation</li>
+                <li>Procedural</li>
+                <li>Unity</li>
+              </ul>
+              <div class="game-card__notes" aria-label="Project notes">
+                <h4 class="game-card__notes-title">Key Highlights</h4>
+                <ul class="game-card__notes-list">
+                  <li>Built a procedural ecosystem system where creature behavior evolves over time.</li>
+                  <li>Developed rule-based interactions that produced emergent outcomes without heavy scripting.</li>
+                </ul>
+                <h4 class="game-card__notes-title">What I Learned</h4>
+                <ul class="game-card__notes-list">
+                  <li>Tuned lightweight rulesets into believable, high-variance gameplay outcomes.</li>
+                </ul>
+              </div>
+              <div class="game-card__links">
+                <a href="https://github.com/mgembree/ecogen" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--filled">GitHub</a>
+                <a href="projects/eco-hunter.html" class="btn btn--sm btn--ghost-light">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SpeedSpree -->
+          <article class="game-card game-card--link reveal" data-index="2" data-case-study="projects/speedspree.html" tabindex="0" role="link" aria-label="Open SpeedSpree case study">
+            <div class="game-card__art game-card__art--speed">
+              <svg class="game-card__svg" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- speed lines -->
+                <line x1="10"  y1="100" x2="255" y2="100" stroke="rgba(255,255,255,0.18)" stroke-width="2"/>
+                <line x1="28"  y1="82"  x2="262" y2="82"  stroke="rgba(255,255,255,0.11)" stroke-width="1.5"/>
+                <line x1="46"  y1="118" x2="268" y2="118" stroke="rgba(255,255,255,0.11)" stroke-width="1.5"/>
+                <line x1="0"   y1="64"  x2="210" y2="64"  stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="0"   y1="136" x2="215" y2="136" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                <line x1="0"   y1="46"  x2="170" y2="46"  stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                <line x1="0"   y1="154" x2="175" y2="154" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                <!-- arrow / player -->
+                <polygon points="292,100 255,74 255,126" fill="rgba(255,255,255,0.3)"/>
+                <polygon points="272,100 245,80 245,120" fill="rgba(255,255,255,0.1)"/>
+              </svg>
+            </div>
+            <div class="game-card__body">
+              <h3 class="game-card__title">SpeedSpree</h3>
+              <p class="game-card__desc">WIP: A Unity 6 3D high-speed roguelike where players navigate procedurally generated levels at breakneck speeds.</p>
+              <ul class="game-card__tags" aria-label="Tags">
+                <li>FPS</li>
+                <li>Speedrun</li>
+                <li>Unity</li>
+              </ul>
+              <div class="game-card__notes" aria-label="Project notes">
+                <h4 class="game-card__notes-title">Key Highlights</h4>
+                <ul class="game-card__notes-list">
+                  <li>Developing a Unity 6 high-speed 3D roguelike centered on procedural level generation and satisfying player movement.</li>
+                  <li>Building momentum-focused movement systems for short, repeatable, high-intensity runs.</li>
+                </ul>
+                <h4 class="game-card__notes-title">What I'm Learning</h4>
+                <ul class="game-card__notes-list">
+                  <li>Refining high-speed movement mechanics to ensure responsive and satisfying player control.</li>
+                </ul>
+              </div>
+              <div class="game-card__links">
+                <a href="https://github.com/mgembree/speedspree" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--filled">GitHub</a>
+                <a href="projects/speedspree.html" class="btn btn--sm btn--ghost-light">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section about">
+      <div class="container about__inner">
+        <div class="about__text reveal">
+          <span class="section__label">The Dev</span>
+          <h2 class="section__title">About Me</h2>
+          <p>Hi! I'm Matthew Embree, an indie game developer. I'm a sucker for roguelikes, and I love making them too!</p>
+          <p>I work primarily with Unity and Blender, but I'm always looking for new tools and technologies to expand my skill set.</p>
+        </div>
+        <div class="about__skills reveal">
+          <h3>Tools &amp; Tech</h3>
+          <ul class="skills-grid" role="list">
+            <li>Unity</li>
+            <li>C#</li>
+            <li>HTML / CSS / JS</li>
+            <li>Git &amp; GitHub</li>
+            <li>Perforce</li>
+            <li>Steam SDK</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <div class="container contact__inner reveal">
+        <span class="section__label">Say Hello</span>
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="contact__sub">Whether it's a collaboration, a question, or just to say hi — I'm easy to reach.</p>
+        <ul class="contact__links" role="list">
+          <li>
+            <a href="mailto:membree202@gmail.com" class="contact__link">
+              <span class="contact__link-label">Email</span>
+              <span class="contact__link-value">membree202@gmail.com</span>
+              <svg class="contact__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- TODO: replace YOUR_GITHUB_USERNAME with your actual GitHub username -->
+            <a href="https://github.com/mgembree" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span class="contact__link-label">GitHub</span>
+              <span class="contact__link-value">@mgembree</span>
+              <svg class="contact__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/matthew-embree-9b2338224/" target="_blank" rel="noopener noreferrer" class="contact__link">
+              <span class="contact__link-label">LinkedIn</span>
+              <span class="contact__link-value">Matthew Embree</span>
+              <svg class="contact__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <span>© 2026 Matthew Embree</span>
+      <span>Built by hand.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

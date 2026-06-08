@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Killing Slime case study by Matthew Embree.">
+  <title>Killing Slime Case Study — Matthew Embree</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=VT323&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="project-page project-page--retro">
+  <header class="site-header is-scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="../index.html#hero" class="nav__logo" aria-label="Home">ME.</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="../index.html#games" class="nav__link">Games</a></li>
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="retro-runner" aria-hidden="true">
+    <div class="retro-runner__hud">PLAYER 1 • RUN LOOP ACTIVE</div>
+    <div class="retro-runner__lane"></div>
+    <div class="retro-runner__sprite"></div>
+    <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-one"></div>
+    <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-two"></div>
+  </div>
+
+  <main class="project-main">
+    <section class="section project-hero">
+      <div class="project-hero__backdrop" aria-hidden="true">
+        <span class="project-hero__moon"></span>
+        <span class="project-hero__mountains"></span>
+        <span class="project-hero__sunline"></span>
+        <span class="project-hero__gridplane"></span>
+      </div>
+      <div class="container">
+        <a href="../index.html#games" class="project-back">&larr; Back To Projects</a>
+        <h1 class="project-title">Killing Slime / Chronos Gate</h1>
+        <p class="project-sub">Roguelike lane tower defense project with a data-driven balancing pipeline, live player traction on Steam, and meaningful coverage from creator playthroughs.</p>
+        <ul class="project-meta" role="list">
+          <li>Unity</li>
+          <li>Steam Release</li>
+          <li>Data-Driven Design</li>
+          <li>Perforce + GitHub</li>
+        </ul>
+
+        <div class="project-grid">
+          <article class="project-panel">
+            <h3>My Contributions</h3>
+            <p></p>
+            <p></p>
+          </article>
+
+          <aside class="project-panel">
+            <h3>External Links</h3>
+            <div class="project-links">
+              <a href="https://store.steampowered.com/app/4780540/Killing_Slime/" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--filled">Steam Page</a>
+              <a href="https://github.com/htruccoUCSC/ChronosGate" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--ghost-light">(Old) GitHub Repo</a>
+              <a href="https://www.killingslime.com/" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--ghost-light">Devlog & Playable Browser Build</a>
+              <a href="https://www.youtube.com/watch?v=l24LhsLrs6A&source_ve_path=OTY3MTQ&embeds_referring_euri=http%3A%2F%2F127.0.0.1%3A5500%2F" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--ghost-light">Streamer / YouTube Feature</a>
+            </div>
+          </aside>
+
+          <article class="project-panel">
+            <h3>Data-Driven Workflow</h3>
+            <ul class="project-list">
+              <li>Enemy HP, damage curves, wave timings, and reward pacing were tuned via spreadsheet passes.</li>
+              <li>Upgrade economy values were compared across multiple run lengths to avoid dead build paths.</li>
+              <li>Balancing notes tracked version-to-version changes so tuning decisions stayed intentional.</li>
+              <li>Team iteration stayed fast by decoupling content values from implementation details.</li>
+            </ul>
+            <p>The gallery below includes one static balancing snapshot and one animated walkthrough cycling through multiple spreadsheet tabs.</p>
+
+            <div class="project-media-grid" aria-label="Spreadsheet artifacts">
+              <a class="project-media" href="../ksspreadsheet1.png" target="_blank" rel="noopener noreferrer">
+                <img src="../ksspreadsheet1.png" alt="Killing Slime Unit list spreadsheet screenshot" loading="lazy" decoding="async">
+                <span>Unit list spreadsheet snapshot</span>
+              </a>
+              <a class="project-media" href="../KSSpreadsheet.gif" target="_blank" rel="noopener noreferrer">
+                <img src="../KSSpreadsheet.gif" alt="Animated walkthrough of Killing Slime spreadsheet tabs" loading="lazy" decoding="async">
+                <span>Spreadsheet Tab Walkthrough</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-panel">
+            <h3>Impact And Results</h3>
+            <ul class="project-list">
+              <li>Shipped on Steam with a clear genre pitch and replay-focused structure.</li>
+              <li>Creator coverage from a popular Twitch/YouTube channel drove attention and wishlist growth.</li>
+              <li>Data-driven balancing reduced iteration time and made late-stage tuning more predictable.</li>
+            </ul>
+
+            <div class="project-video" aria-label="Creator coverage video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/l24LhsLrs6A?si=GLsWcMJOS6cvscpN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <span>© 2026 Matthew Embree</span>
+      <span>Built by hand.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

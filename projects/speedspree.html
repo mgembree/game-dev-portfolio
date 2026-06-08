@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SpeedSpree case study by Matthew Embree.">
+  <title>SpeedSpree Case Study — Matthew Embree</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=VT323&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="project-page project-page--retro retro-site">
+  <header class="site-header is-scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="../index.html#hero" class="nav__logo" aria-label="Home">ME.</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="../index.html#games" class="nav__link">Games</a></li>
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="retro-runner" aria-hidden="true">
+    <div class="retro-runner__hud">PLAYER 1 • RUN LOOP ACTIVE</div>
+    <div class="retro-runner__lane"></div>
+    <div class="retro-runner__sprite"></div>
+    <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-one"></div>
+    <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-two"></div>
+  </div>
+
+  <main class="project-main">
+    <section class="section project-hero">
+      <div class="project-hero__backdrop" aria-hidden="true">
+        <span class="project-hero__moon"></span>
+        <span class="project-hero__mountains"></span>
+        <span class="project-hero__sunline"></span>
+        <span class="project-hero__gridplane"></span>
+      </div>
+      <div class="container">
+        <a href="../index.html#games" class="project-back">&larr; Back To Projects</a>
+        <h1 class="project-title">SpeedSpree</h1>
+        <p class="project-sub">Unity 6 high-speed roguelike where procedural level generation is tuned for flow, readability, and replayable speedrun-level mastery.</p>
+        <ul class="project-meta" role="list">
+          <li>Unity 6</li>
+          <li>3D Roguelike</li>
+          <li>Procedural Levels</li>
+          <li>Momentum Movement</li>
+        </ul>
+
+        <div class="project-grid">
+          <article class="project-panel">
+            <h3>Procedural Pipeline</h3>
+            <p>SpeedSpree builds levels from modular high-speed chunks selected by weighted rules. The generator prioritizes momentum continuity so the player can stay in flow without random layouts creating unfair dead-ends.</p>
+          </article>
+
+          <aside class="project-panel">
+            <h3>External Links</h3>
+            <div class="project-links">
+              <a href="https://github.com/mgembree/speedspree" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--filled">GitHub Repo</a>
+            </div>
+          </aside>
+
+          <article class="project-panel">
+            <h3>Generation Rules</h3>
+            <ul class="project-list">
+              <li>Chunk stitching enforces entry/exit compatibility to keep route continuity at high velocity.</li>
+              <li>Validation passes check spacing, timing windows, and traversal feasibility before a segment is accepted.</li>
+              <li>Hazard placement uses weighted pools to scale challenge while preserving visual readability.</li>
+              <li>Seed-based generation supports deterministic replay for balancing, QA, and speedrun sharing.</li>
+            </ul>
+          </article>
+
+          <article class="project-panel">
+            <h3>Design Intent</h3>
+            <ul class="project-list">
+              <li>Generate surprising layouts that still reward precision and route planning.</li>
+              <li>Reduce frustration by filtering impossible or low-readability segment combinations.</li>
+              <li>Support rapid iteration by tuning generator weights rather than hand-authoring every level.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <span>© 2026 Matthew Embree</span>
+      <span>Built by hand.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

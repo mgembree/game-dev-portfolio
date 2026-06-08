@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eco-Hunter case study by Matthew Embree.">
+  <title>Eco-Hunter Case Study — Matthew Embree</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;600;700&family=VT323&family=Inter:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="project-page project-page--retro retro-site">
+  <header class="site-header is-scrolled" id="site-header">
+    <nav class="nav container">
+      <a href="../index.html#hero" class="nav__logo" aria-label="Home">ME.</a>
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="../index.html#games" class="nav__link">Games</a></li>
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="retro-runner" aria-hidden="true">
+    <div class="retro-runner__hud">PLAYER 1 • RUN LOOP ACTIVE</div>
+    <div class="retro-runner__lane"></div>
+    <div class="retro-runner__sprite"></div>
+    <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-one"></div>
+    <div class="retro-runner__sprite retro-runner__sprite--follower retro-runner__sprite--follower-two"></div>
+  </div>
+
+  <main class="project-main">
+    <section class="section project-hero">
+      <div class="project-hero__backdrop" aria-hidden="true">
+        <span class="project-hero__moon"></span>
+        <span class="project-hero__mountains"></span>
+        <span class="project-hero__sunline"></span>
+        <span class="project-hero__gridplane"></span>
+      </div>
+      <div class="container">
+        <a href="../index.html#games" class="project-back">&larr; Back To Projects</a>
+        <h1 class="project-title">Eco-Hunter</h1>
+        <p class="project-sub">Procedural ecosystem project focused on creating emergent interactions between creature populations, environment constraints, and player adaptation choices.</p>
+        <ul class="project-meta" role="list">
+          <li>Unity</li>
+          <li>Simulation</li>
+          <li>Procedural Systems</li>
+          <li>Emergent Gameplay</li>
+        </ul>
+
+        <div class="project-grid">
+          <article class="project-panel">
+            <h3>Procedural Generation Approach</h3>
+            <p>Eco-Hunter uses layered generation rules so the world feels alive without relying on expensive handcrafted scripting for every encounter. Core generation focuses on modular creature traits, biome-specific constraints, and interaction rules that produce believable variation.</p>
+          </article>
+
+          <aside class="project-panel">
+            <h3>External Links</h3>
+            <div class="project-links">
+              <a href="https://github.com/mgembree/ecogen" target="_blank" rel="noopener noreferrer" class="btn btn--sm btn--filled">GitHub Repo</a>
+            </div>
+          </aside>
+
+          <article class="project-panel">
+            <h3>System Breakdown</h3>
+            <ul class="project-list">
+              <li>Creature instances are assembled from reusable trait pools, producing high combinational variety.</li>
+              <li>Biome generation controls spawn weighting and ecological pressure so different regions produce different behavior patterns.</li>
+              <li>Rule-based interaction loops (predator, prey, movement, resource contest) create emergent events over time.</li>
+              <li>Player ability growth is tied to ecosystem interactions, keeping systems and progression tightly connected.</li>
+            </ul>
+          </article>
+
+          <article class="project-panel">
+            <h3>Design Goals</h3>
+            <ul class="project-list">
+              <li>Keep each run unique while still readable and learnable.</li>
+              <li>Maximize replayability with lightweight procedural logic.</li>
+              <li>Maintain system extensibility so new species rules can be added without rewriting the core loop.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <span>© 2026 Matthew Embree</span>
+      <span>Built by hand.</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
