@@ -802,9 +802,9 @@ button { cursor: pointer; border: none; background: none; font: inherit; }
   --runner-frame-size: 32px;
   --runner-frames: 6;
   --runner-duration: 12s;
-  --runner-image: url("/Chud.png");
-  --runner-image-follower-one: url("/minochud.png");
-  --runner-image-follower-two: url("/wizchud.png");
+  --runner-image: url("../Chud.png");
+  --runner-image-follower-one: url("../minochud.png");
+  --runner-image-follower-two: url("../wizchud.png");
   --runner-background-size: 100% 100%;
 }
 
